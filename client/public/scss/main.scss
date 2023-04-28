@@ -1,0 +1,56 @@
+@use "./abstract/variables" as *;
+@use "./pages/loginUser" as *;
+@use "./pages/registerUser" as *;
+@use "./pages/landingSite" as *;
+body{
+    background-color: $CLightBlue;
+    margin: 1.5em;
+}
+header{
+    padding: 1.5em 0 3em 0;
+    h1{
+        font-weight: bold;
+    }
+}
+.small-btn{
+    width: 40%;
+    height: 2em;
+    border-radius: .3em;
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: 0 1px 5px black;
+    font-weight: 550;
+    letter-spacing: .1rem;
+    color: $CWhite;
+    
+}
+.medium-btn{
+
+}
+.big-btn{
+    width: 65%;
+    height: 2.3em;
+    border-radius: .3em;
+    border: none;
+    box-shadow: 0 1px 5px black;
+    font-size: 1.5rem;
+    font-weight: 550;
+    letter-spacing: .1rem;
+    color: $CWhite;
+}
+.login-btn{
+    background-color: $CDarkBlue;
+}
+.createAccount-btn{
+    background-color:$CDarkPink;
+}
+.contactUs-btn{
+    background-color:$CDarkGreen;
+}
+.back-btn{
+    background-color: $CCrimson;
+}
+.reset-pass-btn{
+    background-color: $CDarkPink;
+}
+input{box-shadow: 0 1px 5px black;}

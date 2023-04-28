@@ -1,0 +1,29 @@
+@use "../abstract/variables" as *;
+.landingSite-container{
+    height: 100vh;
+    width: 100vw;
+}
+.landingsite-header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 4em;
+    h1{
+        color: $CDarkBlue;
+        
+    }
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    .divider{
+        width: 60%;
+        border-bottom: 2px solid black;
+        border-color: $CDarkBlue;
+    }
+}
+
+

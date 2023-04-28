@@ -1,0 +1,160 @@
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 3em;
+}
+.login-header h1 {
+  color: #1A65AE;
+}
+.login-header h4 {
+  font-weight: bold;
+}
+
+.login-container main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.login-container main .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 80%;
+}
+.login-container main .input-container label {
+  font-weight: bold;
+}
+.login-container main .input-container input {
+  height: 2.5rem;
+  border-radius: 0.7em;
+  border-color: #1A65AE;
+}
+.login-container main .submit-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5em;
+  width: 90%;
+}
+.login-container .support-container {
+  padding: 5em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.login-container .support-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container .support-container div h3 {
+  font-weight: bold;
+  padding: 0 0 0.5em 0;
+}
+
+.landingSite-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.landingsite-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 4em;
+}
+.landingsite-header h1 {
+  color: #1A65AE;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+main .divider {
+  width: 60%;
+  border-bottom: 2px solid black;
+  border-color: #1A65AE;
+}
+
+body {
+  background-color: #E5EEF6;
+  margin: 1.5em;
+}
+
+header {
+  padding: 1.5em 0 3em 0;
+}
+header h1 {
+  font-weight: bold;
+}
+
+.small-btn {
+  width: 40%;
+  height: 2em;
+  border-radius: 0.3em;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 0 1px 5px black;
+  font-weight: 550;
+  letter-spacing: 0.1rem;
+  color: #FFFFFF;
+}
+
+.big-btn {
+  width: 65%;
+  height: 2.3em;
+  border-radius: 0.3em;
+  border: none;
+  box-shadow: 0 1px 5px black;
+  font-size: 1.5rem;
+  font-weight: 550;
+  letter-spacing: 0.1rem;
+  color: #FFFFFF;
+}
+
+.login-btn {
+  background-color: #1A65AE;
+}
+
+.createAccount-btn {
+  background-color: #BA0080;
+}
+
+.contactUs-btn {
+  background-color: #00BD63;
+}
+
+.back-btn {
+  background-color: #DC143C;
+}
+
+.reset-pass-btn {
+  background-color: #BA0080;
+}
+
+input {
+  box-shadow: 0 1px 5px black;
+}/*# sourceMappingURL=main.css.map */
