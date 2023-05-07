@@ -31,36 +31,44 @@ p {
   font-weight: bold;
 }
 
-.login-container main {
+.login-container .login-form {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  width: 100%;
 }
-.login-container main .input-container {
+.login-container .login-form .input-container {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
   width: 80%;
 }
-.login-container main .input-container label {
+.login-container .login-form .input-container label {
   font-weight: bold;
 }
-.login-container main .input-container input {
+.login-container .login-form .input-container input {
   height: 2.5rem;
   border-radius: 0.7em;
   border-color: #1A65AE;
 }
-.login-container main .submit-btn-container {
+.login-container .login-form .submit-btn-container {
   display: flex;
   justify-content: space-evenly;
   gap: 0.5em;
   width: 90%;
 }
+.login-container .reg-link-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0 0 0;
+}
 .login-container .support-container {
-  padding: 5em 0 0 0;
+  padding: 3em 0 0 0;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 1em;
 }
 .login-container .support-container div {
   display: flex;
@@ -72,9 +80,66 @@ p {
   padding: 0 0 0.5em 0;
 }
 
-.landingSite-container {
-  height: 100vh;
-  width: 100vw;
+.register-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 3em;
+}
+.register-header h1 {
+  color: #1A65AE;
+}
+.register-header h4 {
+  font-weight: bold;
+}
+
+.register-container .register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  width: 100%;
+}
+.register-container .register-form .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 80%;
+}
+.register-container .register-form .input-container label {
+  font-weight: bold;
+}
+.register-container .register-form .input-container input {
+  height: 2.5rem;
+  border-radius: 0.7em;
+  border-color: #1A65AE;
+}
+.register-container .register-form .submit-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5em;
+  width: 90%;
+}
+.register-container .reg-link-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0 0 0;
+}
+.register-container .support-container {
+  padding: 3em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.register-container .support-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-container .support-container div h3 {
+  font-weight: bold;
+  padding: 0 0 0.5em 0;
 }
 
 .landingsite-header {

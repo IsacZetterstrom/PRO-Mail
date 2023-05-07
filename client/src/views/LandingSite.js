@@ -1,5 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 function LandingSite() {
+  const navigate = useNavigate();
   return (
     <div className="landingSite-container">
       <header className="landingsite-header">
@@ -7,11 +9,29 @@ function LandingSite() {
       </header>
 
       <main>
-        <button className="login-btn big-btn">Logga In</button>
+        <button
+          onClick={() => {
+            navigate("/login");
+          }}
+          className="login-btn big-btn">
+          Logga In
+        </button>
         <div className="divider"></div>
-        <button className="createAccount-btn big-btn">Skapa Konto</button>
+        <button
+          onClick={() => {
+            navigate("/register");
+          }}
+          className="createAccount-btn big-btn">
+          Skapa Konto
+        </button>
         <div className="divider"></div>
-        <button className="contactUs-btn big-btn">Kontakta Oss</button>
+        <button
+          onClick={() => {
+            navigate("/contact");
+          }}
+          className="contactUs-btn big-btn">
+          Kontakta Oss
+        </button>
       </main>
     </div>
   );

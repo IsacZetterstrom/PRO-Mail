@@ -1,17 +1,24 @@
 import User from "../database/models/user.js";
 import bcrypt from "bcrypt";
-import jwtUtil from "../Util/jwtUtil.js";
+import jwt from "jsonwebtoken";
+import fs from "fs";
 
-async function authenticate(email, password) {
-  const result = await User.findOne({ email });
+const privateKey = fs.readFileSync("./config/private.pem");
+const publicKey = fs.readFileSync("./config/public.pem");
+
+async function authenticateLogin(_id, password) {
+  const result = await User.findOne({ _id });
   const isMatch = await bcrypt.compare(password, result.password);
-  console.log(isMatch);
   if (isMatch) {
-    console.log({ email });
-    return jwtUtil.createToken({ email });
+    const token = jwt.sign({ _id }, privateKey, { algorithm: "RS256" });
+    return token;
   } else {
     return undefined;
   }
 }
 
-export default { authenticate };
+function verify(token) {
+  return jwt.verify(token, publicKey);
+}
+
+export default { authenticateLogin, verify };

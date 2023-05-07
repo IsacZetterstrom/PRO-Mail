@@ -1,1 +1,68 @@
 @use "../abstract/variables" as *;
+
+.register-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3em;
+    h1{
+        color: $CDarkBlue;
+    }
+    h4{
+        font-weight: bold;
+    }
+}
+.register-container{
+
+    .register-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+            width: 100%;
+            width: 100%;
+            .input-container{
+                display: flex;
+                flex-direction: column;
+                gap: .2rem;
+                width: 80%;
+                label{
+                    font-weight: bold;
+                }
+                input{
+                    height: 2.5rem;
+                    border-radius: .7em;
+                    border-color: $CDarkBlue;
+                }
+            }
+            .submit-btn-container{
+                display: flex;
+                justify-content:space-evenly;
+                gap: .5em;
+                width: 90%;
+
+            }
+        }
+        .reg-link-container{
+            display: flex;
+            justify-content: center;
+            margin: 1.5em 0 0 0;
+        }
+
+    
+    .support-container{
+        padding: 3em 0 0 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-weight: bold;
+                padding: 0 0 .5em 0;
+            }
+        }
+    }
+}
